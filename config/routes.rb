@@ -5,20 +5,17 @@ Rails.application.routes.draw do
 
   post( "/process_text", { :controller =>"magic", :action => "text_results"})
 
-  #get ( "/label", { :controller => "", :action => ""})
-
 
   #web
   get( "/web", { :controller => "magic", :action => "web_form" })
 
   post( "/process_web", { :controller =>"magic", :action => "web_results"})
 
+
   #label
   get( "/label", { :controller => "magic", :action => "label_form" })
 
   post( "/process_label", { :controller =>"magic", :action => "label_results"})
-  
-
   
 
 
