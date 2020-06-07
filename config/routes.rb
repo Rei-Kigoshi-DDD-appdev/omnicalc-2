@@ -12,6 +12,11 @@ Rails.application.routes.draw do
   get( "/web", { :controller => "magic", :action => "web_form" })
 
   post( "/process_web", { :controller =>"magic", :action => "web_results"})
+
+  #label
+  get( "/label", { :controller => "magic", :action => "label_form" })
+
+  post( "/process_label", { :controller =>"magic", :action => "label_results"})
   
 
   

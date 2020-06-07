@@ -1,0 +1,10 @@
+<h1>Label Results</h1>
+
+<ul>
+  <% @first_label_annotation = @first_result.label_annotations%>
+  <% @first_label_annotation.each do |label| %>
+    <li>
+      <%= label.description %>
+    </li>
+  <%end%>
+</ul>
