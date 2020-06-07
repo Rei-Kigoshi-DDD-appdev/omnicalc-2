@@ -1,0 +1,10 @@
+<h1>Text Results</h1>
+
+<ul>
+  <% @first_text_annotation = @first_result.text_annotations%>
+  <% @first_text_annotation.each do |text| %>
+    <li>
+      <%= text.description %>
+    </li>
+  <%end%>
+</ul>

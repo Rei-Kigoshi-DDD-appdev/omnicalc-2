@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
-  #get ( "/text", { :controller => "", :action => ""})
+  #text
+  get( "/text", { :controller => "magic", :action => "text_form" })
+
+  post( "/process_text", { :controller =>"magic", :action => "text_results"})
+
   #get ( "/label", { :controller => "", :action => ""})
 
 
